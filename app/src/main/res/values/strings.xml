@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">dachuang</string>
+    <string name="app_name">助农小管家</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -15,6 +15,10 @@
     <string name="phoneNum">手机号</string>
     <string name="passwd">密码</string>
     <string name="rePasswd">确认密码</string>
-    <string name="reg">注 册</string>
+    <string name="reg">注册</string>
     <string name="otherFun">其他方式登录</string>
+    <string name="welcome">欢迎</string>
+    <string name="loginTips">请用你的信息登录</string>
+    <string name="login">登录</string>
+    <string name="jPw">记住密码</string>
 </resources>

@@ -9,5 +9,14 @@ class GalleryViewModel : ViewModel() {
     private val _text = MutableLiveData<String>().apply {
         value = "This is gallery Fragment"
     }
-    val text: LiveData<String> = _text
+    var x = 1
+        get() {
+            field += 1
+            return field
+        }
+    val text: LiveData<String>
+        get() {
+            this._text.value += "$x"
+            return this._text
+        }
 }
