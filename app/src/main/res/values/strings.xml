@@ -10,4 +10,11 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="regUser">注册账户</string>
+    <string name="userName">用户名</string>
+    <string name="phoneNum">手机号</string>
+    <string name="passwd">密码</string>
+    <string name="rePasswd">确认密码</string>
+    <string name="reg">注 册</string>
+    <string name="otherFun">其他方式登录</string>
 </resources>
