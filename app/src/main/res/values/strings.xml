@@ -7,9 +7,11 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="person_information">个人资料</string>
+    <string name="boookmark">书签</string>
+    <string name="myself_sort">列表</string>
+    <string name="settings">设置和隐私</string>
+    <string name="helps">帮助中心</string>
     <string name="regUser">注册账户</string>
     <string name="userName">用户名</string>
     <string name="phoneNum">手机号</string>
