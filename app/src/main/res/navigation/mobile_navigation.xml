@@ -8,25 +8,30 @@
     <fragment
         android:id="@+id/person_information"
         android:label="@string/person_information"
+        android:name="personal_information"
         tools:layout="@layout/person_information" />
 
     <fragment
         android:id="@+id/bookmark"
         android:label="@string/boookmark"
+        android:name="book_mark"
         tools:layout="@layout/bookmark" />
 
     <fragment
         android:id="@+id/myself_sort"
         android:label="@string/myself_sort"
+        android:name="sort_people"
         tools:layout="@layout/myself_sort" />
 
     <fragment
         android:id="@+id/settings"
         android:label="@string/settings"
+        android:name="change_settings"
         tools:layout="@layout/settings" />
 
     <fragment
         android:id="@+id/helps"
         android:label="@string/helps"
+        android:name="helps_tips"
         tools:layout="@layout/helps" />
 </navigation>
