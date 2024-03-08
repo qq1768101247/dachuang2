@@ -13,7 +13,7 @@
             android:icon="@drawable/outline_bookmark_border_24"
             android:title="@string/boookmark" />
         <item
-            android:id="@+id/myself_"
+            android:id="@+id/myself_sort"
             android:icon="@drawable/outline_article_24"
             android:title="@string/myself_sort" />
         <item

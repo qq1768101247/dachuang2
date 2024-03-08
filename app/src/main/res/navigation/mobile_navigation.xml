@@ -6,20 +6,27 @@
     app:startDestination="@+id/nav_home">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.dachuang.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/person_information"
+        android:label="@string/person_information"
+        tools:layout="@layout/person_information" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.dachuang.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/bookmark"
+        android:label="@string/boookmark"
+        tools:layout="@layout/bookmark" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.dachuang.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/myself_sort"
+        android:label="@string/myself_sort"
+        tools:layout="@layout/myself_sort" />
+
+    <fragment
+        android:id="@+id/settings"
+        android:label="@string/settings"
+        tools:layout="@layout/settings" />
+
+    <fragment
+        android:id="@+id/helps"
+        android:label="@string/helps"
+        tools:layout="@layout/helps" />
 </navigation>
