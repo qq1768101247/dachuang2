@@ -1,35 +1,346 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" >
 
-    <com.google.android.material.appbar.AppBarLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/Theme.Dachuang.AppBarOverlay">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        android:background="@color/white"
+        android:alpha="0.8"
+        tools:layout_editor_absoluteY="0dp">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/white"
-            app:popupTheme="@style/Theme.Dachuang.PopupOverlay" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    </com.google.android.material.appbar.AppBarLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:padding="5dp">
 
-    <include layout="@layout/content_main" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="@dimen/fab_margin"
-        android:layout_marginBottom="23dp"
-        app:srcCompat="@android:drawable/ic_input_add"/>
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="@string/nav_header_desc"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"
+                        app:srcCompat="@mipmap/ic_launcher_round"
+                        tools:layout_editor_absoluteX="1dp"
+                        tools:layout_editor_absoluteY="-8dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="@string/nav_header_desc"
+                        android:foregroundGravity="center_vertical"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"
+                        app:srcCompat="@drawable/outline_rice_bowl_24"
+                        tools:layout_editor_absoluteX="185dp"
+                        tools:layout_editor_absoluteY="-8dp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:alpha="0.8"
+                        app:srcCompat="@drawable/outline_pending_24"
+                        tools:layout_editor_absoluteX="373dp"
+                        tools:layout_editor_absoluteY="0dp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
 
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/my_primary"
+                    android:alpha="0.5"/>
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    app:srcCompat="@mipmap/ic_launcher_round" />
+
+                <EditText
+                    android:id="@+id/user_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line1"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#30ffffff"
+                    android:text="助农小管家"
+                    android:alpha="0.8"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/user_one1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line1"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#30ffffff"
+                    android:alpha="0.5"
+                    android:text="@string/farm_helper"
+                    android:padding="1dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/user_one2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_one1"
+                    android:layout_marginStart="51dp"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#30ffffff"
+                    android:drawablePadding="0dp"
+                    android:hint=""
+                    android:text="郑州市主要种植水稻、小麦、玉米、棉花等作物。地处黄河中游平原，拥有丰富的水资源和肥沃的土地，农业发展条件较为优越。近年来，郑州市也在推动农业现代化和农业科技进步，以提高农业生产效率和质量。"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:fontFamily="serif-monospace"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/user_one2"
+                    android:background="@color/my_primary"
+                    android:alpha="0.5"/>
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:layout_below="@+id/user_one2"
+                    app:srcCompat="@mipmap/ic_launcher_round" />
+
+                <EditText
+                    android:id="@+id/user_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line2"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#30ffffff"
+                    android:text="每日热点"
+                    android:alpha="0.8"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/user_two1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line2"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#30ffffff"
+                    android:alpha="0.5"
+                    android:text="@string/hot_topic"
+                    android:padding="1dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/user_two2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_two1"
+                    android:layout_marginStart="51dp"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#30ffffff"
+                    android:drawablePadding="0dp"
+                    android:hint=""
+                    android:text="郑州市农业发展面临的问题，包括; 1. 水资源短缺              2. 土地资源过度开发         3. 农业劳动力短缺            4. 农业生产结构单一"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:fontFamily="serif-monospace"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/user_two2"
+                    android:background="@color/my_primary"
+                    android:alpha="0.5"/>
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:layout_below="@+id/line3"
+                    app:srcCompat="@mipmap/ic_launcher_round" />
+
+                <EditText
+                    android:id="@+id/user_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line3"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#30ffffff"
+                    android:text="专家发言"
+                    android:alpha="0.8"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/user_three1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line3"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#30ffffff"
+                    android:alpha="0.5"
+                    android:text="@string/professor"
+                    android:padding="1dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/user_three2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/user_three1"
+                    android:layout_marginStart="51dp"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#30ffffff"
+                    android:drawablePadding="0dp"
+                    android:text="经过研究我们发现:种植水稻的人比种植小麦的人更具集体主义色彩
+                    水稻文化理论认为，水稻种植的高劳动力需求和相互依存的灌溉网络使文"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:fontFamily="serif-monospace"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/user_three3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/user_three2"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#30ffffff"
+                    android:drawablePadding="0dp"
+                    android:text="展开"
+                    android:textColor="@color/black"
+                    android:alpha="0.65"
+                    android:textStyle="bold"
+                    android:fontFamily="serif-monospace"
+                    android:textSize="20sp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="0dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/outline_home_24" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/baseline_search_24" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/outline_group_24" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/outline_notifications_24" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/outline_email_24" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

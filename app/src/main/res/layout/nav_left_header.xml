@@ -67,5 +67,4 @@
         android:textSize="15dp"
         android:text="@string/nav_header_subtitle" />
 
-
 </RelativeLayout>

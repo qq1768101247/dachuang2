@@ -1,8 +1,6 @@
 package com.example.dachuang
 
-import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.Menu
 import android.widget.Toast
@@ -18,8 +16,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.dachuang.activity.LoginActivity
 import com.example.dachuang.databinding.NavLeftMainBinding
 
-import com.example.dachuang.sql.MySQLiteHelper
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -33,6 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.appBarMain.toolbar)
 
+        //右下角邮箱
         binding.appBarMain.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
@@ -48,7 +45,7 @@ class MainActivity : AppCompatActivity() {
             setOf(
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow
             ), drawerLayout
-        )
+        ) // 在主界面绑定导航栏:nav
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 

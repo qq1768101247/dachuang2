@@ -25,4 +25,5 @@
             android:icon="@drawable/outline_help_outline_24"
             android:title="@string/helps" />
     </group>
+
 </menu>
