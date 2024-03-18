@@ -308,7 +308,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="0dp">
+                android:layout_marginTop="5dp">
 
                 <ImageView
                     android:layout_width="32dp"
@@ -320,7 +320,7 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/baseline_search_24" />
+                    app:srcCompat="@drawable/baseline_search" />
 
                 <ImageView
                     android:layout_width="32dp"

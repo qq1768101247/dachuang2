@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:alpha="0.6"
+            android:background="@color/my_primary" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/search_bg"
+                android:drawableLeft="@drawable/baseline_search_24"
+                android:drawablePadding="12dp"
+                android:ems="13"
+                android:fontFamily="sans-serif-medium"
+                android:hint="搜索"
+                android:inputType="text"
+                android:paddingStart="12dp"
+                android:textColorHint="#C5C2C2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="13dp" />
+
+            <ImageButton
+                android:id="@+id/sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:background="@color/white"
+                app:srcCompat="@drawable/baseline_menu_24"
+                tools:layout_editor_absoluteX="303dp"
+                tools:layout_editor_absoluteY="4dp" />
+
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:alpha="0.5"
+                android:background="@color/my_primary"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="56dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分类"
+                android:textColor="@color/my_primary"
+                android:textSize="25dp"
+                tools:layout_editor_absoluteX="352dp"
+                tools:layout_editor_absoluteY="9dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注意！病虫害预警！"
+                android:textColor="@color/my_primary"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="63dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 2 月 7 日"
+                android:textColor="@color/brown"
+                android:textSize="22dp"
+                android:alpha="0.6"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="265dp"
+                tools:layout_editor_absoluteY="61dp" />
+
+            <ImageView
+                android:layout_width="370dp"
+                android:layout_height="110dp"
+                android:alpha="0.6"
+                android:background="@drawable/wide_bg"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="108dp" />
+
+            <ImageView
+                android:layout_width="370dp"
+                android:layout_height="110dp"
+                android:alpha="0.6"
+                android:background="@drawable/wide_bg"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="240dp" />
+
+            <ImageView
+                android:layout_width="370dp"
+                android:layout_height="110dp"
+                android:alpha="0.6"
+                android:background="@drawable/wide_bg"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="380dp" />
+
+            <ImageView
+                android:layout_width="370dp"
+                android:layout_height="110dp"
+                android:alpha="0.6"
+                android:background="@drawable/wide_bg"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="515dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:alpha="0.5"
+                android:background="@color/my_primary"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="649dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前温度"
+                android:textColor="@color/my_primary"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="118dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6℃"
+                android:textColor="@color/black"
+                android:alpha="0.4"
+                android:textSize="50dp"
+                tools:layout_editor_absoluteX="45dp"
+                tools:layout_editor_absoluteY="140dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大雪"
+                android:textColor="@color/black"
+                android:alpha="0.4"
+                android:textSize="30dp"
+                tools:layout_editor_absoluteX="175dp"
+                tools:layout_editor_absoluteY="127dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="0~6℃"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                tools:layout_editor_absoluteX="165dp"
+                tools:layout_editor_absoluteY="162dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="月相"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="273dp"
+                tools:layout_editor_absoluteY="180dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="当前位置"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="32dp"
+                tools:layout_editor_absoluteY="253dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="北纬"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                tools:layout_editor_absoluteX="95dp"
+                tools:layout_editor_absoluteY="276dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="南纬"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                tools:layout_editor_absoluteX="243dp"
+                tools:layout_editor_absoluteY="276dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="28°22‘38“"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                tools:layout_editor_absoluteX="70dp"
+                tools:layout_editor_absoluteY="312dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="108°58’55”"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                tools:layout_editor_absoluteX="220dp"
+                tools:layout_editor_absoluteY="312dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="当地信息"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="392dp" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:alpha="1"
+                android:background="@drawable/few_bg"
+                tools:layout_editor_absoluteX="155dp"
+                tools:layout_editor_absoluteY="402dp" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:alpha="1"
+                android:background="@drawable/few_bg"
+                tools:layout_editor_absoluteX="255dp"
+                tools:layout_editor_absoluteY="402dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="北方地区"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                tools:layout_editor_absoluteX="168dp"
+                tools:layout_editor_absoluteY="404dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="关中平原"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                tools:layout_editor_absoluteX="268dp"
+                tools:layout_editor_absoluteY="404dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="农作物知识："
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="432dp" />
+
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="5dp"
+                android:alpha="0.8"
+                android:background="@color/black"
+                tools:layout_editor_absoluteX="135dp"
+                tools:layout_editor_absoluteY="440dp" />
+
+            <TextView
+                android:layout_width="325dp"
+                android:layout_height="5dp"
+                android:alpha="0.8"
+                android:background="@color/black"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="454dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:text="建议种植：小麦、大豆、玉米"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="42dp"
+                tools:layout_editor_absoluteY="459dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="市场价格查询："
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="523dp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:alpha="1"
+                android:background="@drawable/few_bg"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="553dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:alpha="1"
+                android:background="@drawable/few_bg"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="553dp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:alpha="1"
+                android:background="@drawable/few_bg"
+                tools:layout_editor_absoluteX="260dp"
+                tools:layout_editor_absoluteY="553dp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:alpha="1"
+                android:background="@drawable/few_bg"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="590dp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:alpha="1"
+                android:background="@drawable/few_bg"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="590dp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:alpha="1"
+                android:background="@drawable/few_bg"
+                tools:layout_editor_absoluteX="260dp"
+                tools:layout_editor_absoluteY="590dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="市场价格查询："
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="523dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="玉米:2元/斤"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="554dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="大豆:2.7元/斤"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="553dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="小麦:2.8元/斤"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:layout_editor_absoluteX="265dp"
+                tools:layout_editor_absoluteY="553dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="白菜:1.9元/斤"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:layout_editor_absoluteX="45dp"
+                tools:layout_editor_absoluteY="590dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="土豆:0.8元/斤"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="590dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="更多"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:layout_editor_absoluteX="290dp"
+                tools:layout_editor_absoluteY="590dp" />
+
+            <ImageButton
+                android:id="@+id/help"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:background="@drawable/help_bg"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="660dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="帮 助 ?"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="662dp" />
+
+            <ImageButton
+                android:id="@+id/Forum"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/outline_group_24_not"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="650dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="论 坛"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="200dp"
+                tools:layout_editor_absoluteY="660dp"  />
+
+            <ImageButton
+                android:id="@+id/user_centered"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/outline_person_24_not"
+                tools:layout_editor_absoluteX="250dp"
+                tools:layout_editor_absoluteY="650dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="个人中心"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="300dp"
+                tools:layout_editor_absoluteY="660dp"  />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
