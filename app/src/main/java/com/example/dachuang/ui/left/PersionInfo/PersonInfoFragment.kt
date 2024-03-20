@@ -1,21 +1,17 @@
-package com.example.dachuang.ui.home
+package com.example.dachuang.ui.left.PersionInfo
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toolbar
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.dachuang.R
-import com.example.dachuang.databinding.FragmentHomeBinding
+import com.example.dachuang.databinding.PersonInformationBinding
 
-class HomeFragment : Fragment() {
+class PersonInfoFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: PersonInformationBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -27,16 +23,15 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+            ViewModelProvider(this).get(PersionInfoModel::class.java)
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = PersonInformationBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
+        val textView: TextView = binding.personInformation
         homeViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
-
         return root
     }
 
@@ -44,5 +39,4 @@ class HomeFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
 }

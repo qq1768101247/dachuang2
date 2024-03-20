@@ -45,6 +45,7 @@
             android:name=".activity.RegActivity"
             android:theme="@style/Theme.Dachuang.NoActionBar" >
         </activity>
+
     </application>
 
 </manifest>
