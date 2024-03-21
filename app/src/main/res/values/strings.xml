@@ -26,4 +26,8 @@
     <string name="farm_helper">@Farmerhelper · 37秒</string>
     <string name="hot_topic">@Hot_topic · 3分钟</string>
     <string name="professor">@perfessor · 5分钟</string>
+    <string name="search">搜索</string>
+    <string name="sort">分类</string>
+    <string name="chong">注意！病虫害预警！</string>
+    <string name="date1">1 2 月 7 日</string>
 </resources>
