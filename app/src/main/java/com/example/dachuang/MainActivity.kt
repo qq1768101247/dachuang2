@@ -12,7 +12,6 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.dachuang.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -40,6 +39,7 @@ class MainActivity : AppCompatActivity() {
 //        setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 //        setContentView(R.layout.app_bar_main)
+//        setSupportActionBar(AppBarMainBinding.inflate(layoutInflater).toolbar)
 
         drawerLayout = binding.drawerLayout
         toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
