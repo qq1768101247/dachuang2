@@ -14,7 +14,7 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="25dp"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:contentDescription="@string/nav_header_desc"
@@ -51,7 +51,7 @@
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="@string/nav_header_title"
         android:textColor="@color/black"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="25dp"
         android:textStyle="bold"
         android:textSize="28sp"
         android:alpha="0.8"
@@ -63,7 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/username"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="25dp"
         android:textColor="@color/my_primary"
         android:alpha="0.85"
         android:fontFamily="sans-serif-condensed-medium"
